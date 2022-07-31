@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #2e2f30;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+li {
+    float: left;
+    list-style-type: none;
+    padding: 10px;
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.logo_nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+li:hover {
+    color: red;
+}
+
+
+.about_dropdown, .message_dropdown, .enterprise_dropdown, .media_dropdown {    
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    
+}
+
+.about_li, .message_li, .enterprise_li, .media_li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #2e2f30;
+    display: none;
+    transition: 1s;
+    z-index: 1;
+}
+
+
+.about_dropdown:hover .about_li {
+    display: block;
+}
+
+.message_dropdown:hover .message_li {
+    display: block;
+}
+
+.enterprise_dropdown:hover .enterprise_li {
+    display: block;
+}
+
+.media_dropdown:hover .media_li {
+    display: block;
+}
+.nav_bars_ul {
+    display: flex;
+    width: 650px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.silder_img {
+    width: 100%;
+}
+
+.margin_drag {
+    margin: auto;
+    margin-top: 100px;
+}
+.drag {
+    background-color: rgb(197, 197, 197);
+    height: 1px;
+    width: 100%; 
+}
+
+.latest_news{
+    background-color: white;
+}
+
+
+.margin_drag {
+    margin-top: 100px;
+    width: 650px;
+}
+
+.latest_news {
+    font-size: 45px;
+    background: white;
+    width: fit-content;
+    margin: auto;
+    margin-top: -35px;
+    padding: 10px;
+}
+
+.first_img {
+    padding: 5px;
+    border: 1px solid white;
+    box-shadow: 5px 4px 5px rgb(158, 158, 158), -5px -5px 5px rgb(158, 158, 158);
+    width: 300px;
+    border-radius: 10px;
+}
+
+.news_slider_header {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.content {
+    margin-top: 15px;
+}
+
+.slider_v2 {
+    display: flex;
+    width: 975px;
+    justify-content: space-between;
+}
+
+.news_sec {
+    width: 975px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.news_slider {
+    cursor: pointer;
+}
+
+.news_slider:hover {
+    filter: grayscale(100%);
+}
+
+.read_more {
+    margin-top: 50px;    
+    text-align: center;
+}
+
+button.readmore_btn {
+    background: red;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px #a3a3a3;
+    transition: .5s;
+    opacity: 0.8;
+}
+
+button.readmore_btn:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+button.corporate_profile:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+
+
+button.corporate_profile {
+    padding: 20px;
+    background: #6c757d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.business_header {
+    color: red;
+    font-size: 55px;
+}
+
+.business_outline {
+    color: #6b7586;
+    font-size: 25px;
+}
+.business_desc {
+    width: 550px;
+}
+
+.busniess_desctiption {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #4d5265;
+}
+
+.business_btns {
+    margin-top: 20px;
+}
+
+.corporate_profile {
+    font-weight: bold;
+}
+
+.business_desc_iframe {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1250px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.news_letter_sec {
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 1300px;
+    display: flex;
+}
+
+span.material-icons {
+    position: relative;
+    top: 29%;
+    background: red;
+    padding: 20px;
+    color: white;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.news_letter_sec:hover span.material-icons {
+    opacity: 0.5;
+}
+
+.news_letter_img{
+    cursor: pointer;
+}
+
+.footer {
+    background: rgb(0 0 0 / 80%);
+    color: white;
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+
+.first_drag {
+    height: 1px;
+    background: #7f8894;
+}
+
+.footer_drag {
+    width: 150px;
+}
+
+.sec_drag {
+    background: #8c2a2f;
+    height: 3px;
+    position: relative;
+    top: -1px;
+    width: 60px;
+}
+
+span.corporate_header {
+    color: #a7a7a7;
+    font-size: 29px;
+}
+
+.location_1, .phone, .telephone, .mail {
+    color: #706d6d;
+    width: 365px;
+    margin-top: 5px;
+}
+
+.footer_sec_1 {
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    margin: auto;
+}
+
+.footer_sec_2 {
+    background-color: rgb(0 0 0 / 60%);
+    color: #706d6d;
+    font-weight: bold;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+img.footer_second_sec_logo {
+    width: 20px;
+    filter: grayscale(100%);
+}
+.logo_and_text {
+    width: 600px;
+}
+.logo_and_text:hover .footer_second_sec_logo {
+    filter: grayscale(0%);
+}
+
+#social_ic_facebook, #social_ic_youtube, #social_ic_linkedin, #social_ic_twitter {
+    background: #222222;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.footer_section_elements {
+    width: 1250px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#social_ic_facebook:hover {
+    background-color: #395796;
+}
+
+#social_ic_youtube:hover {
+    background-color: red;
+}
+
+#social_ic_linkedin:hover {
+    background-color: #0371ae;
+}
+
+#social_ic_twitter:hover {
+    background-color: #0371ae;
+}
+
+.red_border{
+    height: 5px;
+    background: rgb(237 41 49 / 50%);
+}
+
+.footer_sec_3{
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: #747679;
+}
+
+span.material-icons {
+    cursor: pointer;
+}
+
+.contract_us_sec {
+    position: absolute;
+    width: 950px;
+    left: 450px;
+    margin-top: 150px;
+}
+
+h2 {
+    color: #646161;
+}
+
+.contract_header {
+    display: flex;
+}
+
+.us_span {
+    position: relative;
+    top: 16px;
+}
+.contract_header {
+    font-size: 35px;
+    position: relative;
+    left: 350px;
+}
+
+input[type="text"], select , textarea {
+    height: 25px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #1da1f2;
+}
+
+.first_sec, .second_sec {
+    display: flex;
+    justify-content: space-around;
+}
+
+.second_sec {
+    margin-top: 20px;
+}
+
+.third_sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chooice_subject, textarea {
+    width: 720px!important;
+}
+
+.sub_choice {
+    margin-top: 20px;
+}
+
+textarea.query {
+    height: 150px;
+}
+
+textarea:focus {
+    outline: #1da1f2;
+    border: 1px solid #1da1f2;
+}
+
+.contract_us_form {
+    margin-top: 50px;
+}
+
